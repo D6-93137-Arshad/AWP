@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3_Q3</title>
+    <style>
+
+        body
+        {
+            margin: 0px;
+        }
+
+        #container 
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+
+        .navigation
+        {
+            background-color: rgb(43, 73, 226);
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(43, 73, 226);
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .Home{
+            padding: 15px;
+            background-color: aliceblue;
+        }
+
+        .About{
+            background-color: bisque;
+            /* margin-bottom: 5px; */
+            padding: 15px;
+            padding-bottom: 60px;
+        }
+
+        .Course{
+            background-color: blanchedalmond;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+
+        .Contact{
+            padding: 15px;
+            background-color: cornsilk;
+        }
+
+        .Sunbeam{
+            border-top-left-radius: 25%;
+            border-bottom-right-radius: 25%;
+            float: left;
+        }
+
+        .Break {
+            border-bottom: 3px;
+            border-top: 3px;
+            height: 10px;
+            border-right: 0px;
+            border-left: 0px;
+            border-color: black;
+            border-style: solid;
+            background-color: rgb(43, 73, 226);
+        }
+
+        .CourseImages{
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+            gap: 20px;
+        }
+
+        .table
+        {
+            color: blue;
+        }
+
+        footer{
+            border-top: 2px;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+            background-color: rgb(43, 73, 226);
+        }
+
+        button
+        {
+            padding: 6px;
+            background-color: rgb(43, 73, 226);
+            border-style: none;
+            color: white;
+            font-size: 20px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navigation">
+        <nav>
+            <button>Home</button>
+            <button>About</button>
+            <button>Course</button>
+            <button>Contact</button>
+        </nav>
+        </div>
+    </header>
+
+    <h2 style="padding: 15px;">Sunbeam Institute of Information Technology</h2>
+
+    <hr>
+
+    <section class="Home">
+        <h4>Home Section</h4>
+        <div id="container">
+            <div><img src="./image/25+.png" alt=""></div>
+            <div><img src="./image/120+.png" alt=""></div>
+            <div><img src="./image/50000+.png" alt=""></div>
+        </div>
+    </section>
+
+    <div class="Break"></div>
+
+    <section class="About">
+        <h4>About Section</h4>
+        <div aria-colcount="2">
+
+                <tr>
+                    <td><img class="Sunbeam" src="./image/Sunbeam.png" alt=""></td>
+                    <td>&nbsp; At Sunbeam we believe retaining a competitive edge is imperative for any individual in today's
+                        professional world. Companies are restructuring their organizations & reengineering their
+                        business processes. Not only have the challenges become more demanding, but also the rewards of
+                        staying at the forefront seem to be promising.
+
+                        In this scenario, technical & personal skills which provide effective solutions & time critical
+                        support are of principal significance for the long term growth of professionals. Sunbeam's
+                        expertise in effectively delivering training, solutions & services has made it a favored
+                        institution to many students & professionals focused on an aggressive career growth strategy.
+
+                        Sunbeam's proven track record in bringing about effective transformations in individuals is
+                        backed by a solid understanding of the rapidly changing needs of the industry & the global
+                        business scenario. Sunbeam's success has been built on its comprehensively researched,
+                        innovative training methodologies, deployment of technology and an emphasis on transformational
+                        & industry-relevant programs offering value-added services to its clients. A young and dynamic
+                        management team and carefully recruited and trained staff members drive Sunbeam's business
+                        vision & have established strong credentials in a short span of time.
+
+                        Sunbeam Group's expertise in effectively delivering training & solutions has made it a favored
+                        associate to many establishments focused on aggressive growth strategies. Since it's humble
+                        beginnings in the late 90's Sunbeam Group has today, evolved into a multi-technology,
+                        multi-location competency center with IT professionals capable of delivering high-end
+                        technological training & solutions in diverse modes. Their expertise in various IT fields has
+                        made Sunbeam Group a premium turnkey solution provider.</td>
+                </tr>
+
+        </div>
+    </section>
+
+    <br><br>
+
+    <div class="Break"></div>
+
+    <section class="Course">
+        <h4>Course Section</h4>
+        <div class="CourseImages">
+            <img src="./image/DAC.png" alt="">
+            <img src="./image/DMC.png" alt="">
+            <img src="./image/DBDA.png" alt="">
+            <img src="./image/DESD.png" alt="">
+            <img src="./image/DITISS.png" alt="">
+        </div>
+    </section>
+
+    <div class="Break"></div>
+
+    <section class="Contact">
+        <h4>Contact Us</h4>
+
+        <table class="table">
+            <tr>
+                <td>Sunbeam Hinjewadi Pune</td>
+                <td> Sunbeam Karad</td>
+            </tr>
+
+            <tr>
+             <td colspan="2"><br></td>
+            </tr>
+            
+            <tr>
+                <td>Authorized Training Centre of C-DAC ACTS "Sunbeam IT Park" , Ground Floor , Phase 2 of Rajiv Gandhi Infotech Park , Hinjewadi , Pune - 411057 , MH-INDIA</td>
+                <td>Authorized Training Centre of C-DAC ACTS "Anuda Chambers" , 203 Shaniwar Peth , Near Gujar Hospital , Karad - 415 110 , Dist. Satara , MH-INDIA</td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+
+            <tr>
+
+                <td>+91 82 82 82 9805 / +91 82 82 82 9806</td>
+                <td>+91 82 82 82 9806 / 02164 - 225500 , 225800</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+
+            <tr>
+                <td>siit@sunbeam.com</td>
+                <td>siitkarad@sunbeaminfo.com</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        Sunbeam. &#169 2025. All rights reserved
+    </footer>
+
+
+</body>
+
+</html>

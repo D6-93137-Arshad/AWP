@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6_Q1</title>
+</head>
+<body>
+
+    <h1>Date & Greeting Website Web Page</h1>
+
+    <p id="Dates">1</p>
+    <p>Welcome, and Good Morning to You.</p>
+    <p id="Days">2</p>
+    
+    <script>
+        const current = new Date();
+        const day = current.getDate();
+        const month = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(current);
+        const year = current.getFullYear();
+        const weekday = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(current);
+
+        function daysTillYearEnd() {
+            const endOfYear = new Date(year, 11, 31);
+            const timeDifference = endOfYear.getTime() - current.getTime();
+            return Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        }.
+
+        const remainingDays = daysTillYearEnd();
+
+        const allP = document.getElementsByTagName("p");
+        for (let i = 0; i < allP.length; i++) {
+            allP[i].style.color = "red";
+        }
+
+        const enterDate = document.getElementById("Dates");
+        enterDate.innerHTML = `Today is ${weekday}, ${day} ${month} ${year}`;
+
+        const enterDaysLeft = document.getElementById("Days");
+        enterDaysLeft.innerHTML = `Number of days left till end of year: <span style="color:blue;">${remainingDays}</span>`;
+    </script>
+
+</body>
+</html>

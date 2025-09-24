@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmetn5_Q1</title>
+</head>
+<body>
+    
+    <script>
+
+        do
+        {
+            num1 = prompt("Enter Value for Number 1")            
+            n1 = parseInt(num1)
+
+            if(n1<=0)
+            {
+                alert("Enter a positive Number")
+            }
+        }while(n1<=0)
+
+        do
+        {
+            num2 = prompt("Enter Value for Number 2")            
+            n2 = parseInt(num2)
+
+            if(n2<=0)
+            {
+                alert("Enter a positive Number")
+            }
+        }while(n2<=0)
+
+        do
+        {
+            num3 = prompt("Enter Value for Number 3")            
+            n3 = parseInt(num3)
+
+            if(n3<=0)
+            {
+                alert("Enter a positive Number")
+            }
+        }while(n3<=0)
+
+
+        if(num1 > num2 && num1 > num3)
+        {
+            alert("The Largest Number is : " + num1)
+        }
+
+        if(num2 > num1 && num2 > num3)
+        {
+            alert("The Largest Number is : " + num2)
+        }
+
+        if(num3 > num2 && num3 > num1)
+        {
+            alert("The Largest Number is : " + num3)
+        }
+
+        if(num1==num2 && num3>num1)
+        {
+            alert("The Largest Number is :  " + num3)
+        }
+
+        if(num1==num3 && num2>num1)
+        {
+            alert("The Largest Number is : " + num2)
+        }
+
+        if(num3==num2 && num1>num2)
+        {
+            alert("The Largest Number is : " + num1)
+        }
+
+        if(num1==num2 && num1==num3)
+        {
+            alert("The Largest Number is : " + num1)
+        }
+
+        if(num1==num2 && num1>num3)
+        {
+            alert("The Largest Number is : " + num1)
+        }
+
+        if(num1==num3 && num2>num3)
+        {
+            alert("The Largest Number is : " + num2)
+        }
+
+        if(num1==num3 && num3>num2)
+        {
+            alert("The Largest Number is : " + num3)
+        }
+    </script>
+
+</body>
+</html>

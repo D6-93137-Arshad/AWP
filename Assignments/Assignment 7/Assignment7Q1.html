@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Assignment 7 Question 1</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        img
+        {
+            height: auto;
+            width: 300px;
+        }
+
+        td
+        {
+            padding: 8px;
+        }
+
+        th
+        {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <img src="./images/image.png" alt="">
+
+        <h1>Sunbeam Register Form</h1>
+        <form action="">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td rowspan="12"><iframe src="https://www.youtube.com/embed/Az5Bt3zUtiM" frameborder="0" style="height: 300px; width: 400px;"></iframe></td>
+                    <th>
+                        <label for="Name" class="form-label">Name : </label>
+                    </th>
+                    <td>
+                        <input class="form-control" type="text" aria-label="readonly input example" id="Name" required>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>
+                        <label for="Date" class="form-label">Date : </label>
+                    </th>
+                    <td>
+                        <input type="date" name="Date" id="Date">
+                    </td>
+        
+    
+                </tr>
+    
+                <tr>
+                    <th>
+                        <label for="exampleInputEmail1" class="form-label">Email : </label>
+                    </th>
+                    <td>
+                        
+                        <div class="mb-3">
+                            <input type="email" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                       
+                        </div>
+                        
+                    </td>
+                    
+                </tr>
+                   
+                <tr>
+                    <th>
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Password : </label>
+                        </div>
+                    </th>
+                    <td>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" required>
+                            </div>
+                            <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text">
+                                Must be 8-20 characters long.
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <th>
+                        <label for="exampleFormControlTextarea1" class="form-label">Address : </label>
+                    </th>
+                    <td>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        </div>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <th>Gender : </th>
+                    <td>
+                        <input type="radio" class="form-check-input" id="Male" name="Gender">
+                        <label class="form-check-label" for="Male">Male</label>
+                        <input type="radio" class="form-check-input" id="Female" name="Gender">
+                        <label class="form-check-label" for="Female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                        <th>Upload Photo : </th>
+                        <td></td>
+                </tr>
+
+                <tr>
+                        <th> 
+                            <label for="" class="form-label">Select Your Course : </label>
+                        </th>
+                        <td>
+                            <select name="123" id="" aria-placeholder="123"> 123
+                                <option value="1"></option>
+                            </select>
+                        </td>
+                </tr>
+        
+                <tr>
+                    <th>
+                        Skill Set : 
+                    </th>
+                    <td>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="JAVA">
+                            <label class="form-check-label" for="JAVA">Java</label>
+                            <input type="checkbox" class="form-check-input" id="CPP">
+                            <label class="form-check-label" for="CPP">CPP</label>
+                            <input type="checkbox" class="form-check-input" id="OS">
+                            <label class="form-check-label" for="OS">OS</label>
+                        </div>
+                    </td>
+                </tr>
+        
+                <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-secondary btn-sm">Register</button>
+                            <button type="reset" class="btn btn-secondary btn-sm">Clear</button>
+                        </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </form>
+    </div>
+
+</body>
+</html>

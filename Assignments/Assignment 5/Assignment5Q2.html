@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5_Q2</title>
+</head>
+<body>
+    
+    <script>
+
+        do
+        {
+            num = window.prompt("Enter the Number of Times to print the message")
+            
+            number = parseInt(num)
+            if(number<0)
+            {
+                alert("Enter A positive Number")
+            }
+
+            if(isNaN(number))
+            {
+                alert("ENTER A NUMBER NOT A STTRING")
+            }
+            
+        }while(number<=0 && number != String)
+
+        sent = window.prompt("Enter the Message")
+
+        for(i = 1 ; i <= num ; i++)
+        {
+            console.log(i + '. ' + sent)        
+        }
+
+    </script>
+
+</body>
+</html>

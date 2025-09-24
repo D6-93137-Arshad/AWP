@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3_Q4</title>
+
+    <style>
+
+        body
+        {
+            background-color: rgb(207, 205, 205);
+        }
+
+        h2
+        {
+            text-align: center;
+        }
+
+        hr
+        {
+            color: azure;
+        }
+
+        
+        #Container
+        {
+            gap: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .prod
+        {
+            background-color: white;
+            align-items: center;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        img
+        {
+            width: 400px;
+            height: 350px;
+        }
+
+        .button
+        {
+            display:inline;
+            border: 2px solid white;
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+
+        div
+        {
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <section>
+
+        <h2>Our Products</h2>
+
+        <div id="Container">
+
+            <div class="prod">
+                <img src="./images/laptop.png" alt="">
+                <hr>
+                <div><h3>Product 1</h3></div>
+                <div style="color: grey;">High-quality product that meets your needs</div>
+                <div style="color: orange;"><b>$805.08</b></div>
+                <div class="button"> Add To Cart </div>
+            </div>
+
+            <div class="prod">
+                <img src="./images/bag.png" alt="">
+                <hr>
+                <div><h3>Product 2</h3></div>
+                <div style="color: grey;">Excellent craftmanship and durable design</div>
+                <div style="color: orange;"><b>$11.50</b></div>
+                <div class="button"> Add To Cart </div>
+            </div>
+            
+            <div class="prod">
+                <img src="./images/keyboard.png" alt="">
+                <hr>
+                <div><h3>Product 3</h3></div>
+                <div style="color: grey;">Relatable and affordable choice</div>
+                <div style="color: orange;"><b>$12.00</b></div>
+                <div class="button"> Add To Cart </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+
+</body>
+</html>
