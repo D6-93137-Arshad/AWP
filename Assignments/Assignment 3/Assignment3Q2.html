@@ -1,195 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sunbeam Institute of Information Technology</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3_Q2</title>
 
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-    }
+    <style>
 
-    header nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+        #container{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 100%;
+            background-color: aquamarine;
+        }
 
-    header nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
+        .Row1_1{
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
 
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        .Row1_2{
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
 
-    main section {
-      padding: 20px;
-      border-bottom: 2px solid #004080;
-    }
+        .Row2_1{
+            width: 90%;
+            height: 50px;
+            background-color: green;
+        }
 
-    .home {
-      background-color: #e6f9ff;
-      text-align: center;
-    }
+        .Row2_2{
+            width: 10%;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .Row3_1{
+            width: 10%;
+            height: 50px;
+            background-color: red;
+        }
 
-    .about {
-      background-color: #f2f2f2;
-    }
+        .Row3_2{
+            width: 80%;
+            height: 50px;
+            background-color: green;
+        }
 
-    .courses {
-      background-color: #e6f9ff;
-      text-align: center;
-    }
+        .Row3_3{
+            width: 10%;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .Row4_1{
+            width: 90%;
+            height: 50px;
+            background-color: red;
+        }
 
-    .contact {
-      background-color: #f2f2f2;
-      text-align: center;
-    }
+        .Row4_2{
+            width: 10%;
+            height: 50px;
+            background-color: blue;
+        }
 
-    footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
+        .Row5_1{
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            background-color: green;
+        }
 
-    h1, h2 {
-      margin-top: 0;
-    }
+        .Row5_2{
+            position: relative;
+            width: 10%;
+            left: 50%;
+            height: 40px;
+            top: 5px;
+            background-color: red;
+        }
 
-    /* Box layout for Home Section */
-    .box-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+        .Row6_1{
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
 
-    .box {
-      background-color: #0099cc;
-      color: white;
-      padding: 20px;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 18px;
-      font-weight: bold;
-    }
+        .Row6_2{
+            position: relative;
+            width: 10%;
+            left: 50%;
+            height: 50px;
+            background-color: blue;
+        }
 
-    /* Box layout for Courses Section */
-    .course-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+        .Row7_1{
+            position: relative;
+            width: 10%;
+            /* left: 50%; */
+            height: 50px;
+            background-color: red;
+        }
 
-    .course {
-      background-color: #ff9933;
-      color: white;
-      padding: 20px;
-      border-radius: 5px;
-      width: 150px;
-      font-weight: bold;
-    }
+        .Row7_2{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
 
-    .course:nth-child(2) {
-      background-color: #0099cc;
-    }
+        .Row7_3{
+            position: absolute;
+            width: 100%;
+            /* left: 10%; */
+            top: 40%;
+            padding-left: 0px;
+            margin-left: 0px;
+            /* left: 50%; */
+            height: 10px;
+            
+            background-color: green;
+        }
 
-    .course:nth-child(3) {
-      background-color: #ff3300;
-    }
+        .Row8_1{
+            position: static;
+            height: 50px;
+            width: 100%;
+            background-color: green;
+        }
 
-    .course:nth-child(4) {
-      background-color: #006699;
-    }
+        .Row8_2{
+            position: absolute;
+            width: 10%;
+            height: 50px;
+            /* margin-right: 0px; */
+            background-color: yellow;
+        }
+        
+        .Row8_3{
+            position: absolute;
+            width: 10%;
+            height: 50px;
+            margin-left: 40%;
+            /* margin-right: 20px; */
+            background-color: yellow;
+        }
 
-    /* Contact section */
-    .contact-info {
-      display: flex;
-      justify-content: space-around;
-      text-align: left;
-    }
-  </style>
+        .Row8_4{
+            position: absolute;
+            width: 10%;
+            height: 50px;
+            margin-left: 40%;
+            /* margin-right: 20px; */
+            background-color: yellow;
+        }
+
+        .Row8_5{
+            position: absolute;
+            width: 10%;
+            height: 50px;
+            margin-left: 40%;
+            /* margin-right: 20px; */
+            background-color: yellow;
+        }
+    </style>
+
 </head>
+
+
+
 <body>
+    
+Row 1   
+<br>    
 
-  <header>
-    <h1>Sunbeam Institute of Information Technology</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div id="container">
+    <div class="Row1_1"></div>
+    <div class="Row1_2"></div>
+</div>
 
-  <main>
-    <!-- Home Section -->
-    <section id="home" class="home">
-      <h2>Home Section</h2>
-      <div class="box-container">
-        <div class="box">25+ Years of Experience in Education</div>
-        <div class="box">50000+ Students & Professionals Trained so far</div>
-        <div class="box">125+ Recruiters At Placements</div>
-      </div>
-    </section>
+<br>
+Row 2
+<br>
+<br>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>About Sunbeam Section</h2>
-      <p>At Sunbeam we believe gaining a competitive edge is imperative for any individual in today's professional world.</p>
-      <p>Sunbeam's education and training helps professionals and students to gain that edge by enhancing their skills.</p>
-      <p>Sunbeam has trained 50000+ students & professionals in various domains and our alumni are working with leading industries across the globe.</p>
-    </section>
+<div id="container">
+    <div class="Row2_1"></div>
+    <div class="Row2_2"></div>
+</div>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-      <h2>Course Section</h2>
-      <div class="course-container">
-        <div class="course">Course 1</div>
-        <div class="course">Course 2</div>
-        <div class="course">Course 3</div>
-        <div class="course">Course 4</div>
-      </div>
-    </section>
+<br>
+Row 3
+<br>
+<br>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-info">
-        <div>
-          <p><b>Sunbeam Pune</b></p>
-          <p>Sadashiv Peth</p>
-          <p>Email: info@sunbeam.com</p>
-          <p>Phone: +91-1234567890</p>
-        </div>
-        <div>
-          <p><b>Sunbeam Karad</b></p>
-          <p>Near Market Yard</p>
-          <p>Email: karad@sunbeam.com</p>
-          <p>Phone: +91-9876543210</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<div id="container">
+    <div class="Row3_1"></div>
+    <div class="Row3_2"></div>
+    <div class="Row3_3"></div>
+</div>
 
-  <footer>
-    <p>Sunbeam © 2025. All Rights Reserved.</p>
-  </footer>
+<br>
+Row 4
+<br><br>
+
+<div id="container">
+    <div class="Row4_1"></div>
+    <div class="Row4_2"></div>
+</div>
+
+<br>
+Row 5
+<br><br>
+
+<div id="container">
+    <div class="Row5_1"></div>
+    <div class="Row5_2"></div>
+</div>
+
+<br>
+Row 6
+<br><br>
+
+<div id="container">
+    <div class="Row6_1"></div>
+    <div class="Row6_2"></div>
+</div>
+
+<br>
+Row 7
+<br><br>
+
+<div id="container">
+    <div class="Row7_1"></div>
+    <div class="Row7_2">
+    <div class="Row7_3"></div>
+    </div>
+</div>
+
+<br>
+Row 8 
+<br><br>
+
+<div id="container">
+    <div class="Row8_1"></div>
+    <div class="Row8_2"></div>
+    <div class="Row8_3"></div>
+</div>
+
+
 
 </body>
 </html>
